@@ -44,14 +44,17 @@ function displayBar() {
 
                 // Append the container to the main div
                 div.appendChild(container);
-                li.addEventListener("click",()=>{
+
+                li.addEventListener("mouseover",function displayCard(){
                     const existingCard = document.querySelector("#service-card");
                     existingCard.innerHTML=""
+
                 
                     // Create service card
                     const card = document.createElement("div");
                     card.classList.add("service-card");
                     const form=document.createElement('form')
+                    form.classList.add("form")
                     card.appendChild(form)
                 
                     // Service Image
@@ -73,11 +76,13 @@ function displayBar() {
                     clientNameInput.type = "text";
                     clientNameInput.placeholder = "Enter your name";
                     clientNameInput.required = true;
+                    clientNameInput.style.backgroundColor=" rgba(255, 255, 0, 0.438);"
                 
                     const houseNumberInput = document.createElement("input");
                     houseNumberInput.type = "text";
                     houseNumberInput.placeholder = "Enter your house number";
                     houseNumberInput.required = true;
+                    
                 
                     // Submit Button
                     const requestButton = document.createElement("button");
@@ -85,8 +90,16 @@ function displayBar() {
                     requestButton.innerText = "Request Service";
                     form.addEventListener("submit", (e) => {
                         e.preventDefault()
+                        requestButton.innerText="Requested"
+                        if (service.clients.find(client => client.houseNumber === houseNumberInput.value)) {
+                            alert("You already made a request");
+                            form.reset()
+                            return;
+                        }
                         const newClient={name:clientNameInput.value,houseNumber:houseNumberInput.value}
+                        
                         service.clients.push(newClient)
+                        
 
                         fetch(`http://localhost:3000/services/${category.id}`, {
                             method: "PATCH",
@@ -96,14 +109,15 @@ function displayBar() {
                             body: JSON.stringify({ services: category.services })
                         })
                         .then(response => response.json())
-                        .then(updatedCategory => {
-                            console.log("Service request submitted:", updatedCategory);
+                        .then(() => {
+                            
                             alert("Service request submitted successfully!");
                         })
                 
                         // Reset input fields
                         form.reset()
                     });
+                   
                 
                     // Append elements to the card
                     form.appendChild(image);
@@ -114,11 +128,13 @@ function displayBar() {
                     form.appendChild(requestButton);
                 
                     // Append the card to the body
-                    document.body.appendChild(card);
+                    existingCard.appendChild(card);
                 }
-                    
+                
+              
                     
                 )})
+               
             
 
 

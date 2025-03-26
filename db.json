@@ -1,186 +1,214 @@
 {
-    "services": [
-      {
-        
-        "category": "Daily Cleaning & Housekeeping",
-        "services": [
-          {
-            "clients":[],
-            "name": "Room Cleaning",
-            "description": "We offer room cleaning services including making beds, vacuuming, and dusting.",
-            "image": "images/room-cleaning.jpg"
-          },
-          {
-            "clients":[],
-            "name": "Bathroom Sanitization",
-            "description": "Fresh towels, toiletries restocking, and deep cleaning.",
-            "image": "images/bathroom-sanitization.jpg"
-          },
-          {
-            "clients":[],
-            "name": "Trash Removal",
-            "description": "Daily trash removal to keep your room clean and fresh.",
-            "image": "images/trash-removal.jpg"
-          },
-          {
-            "clients":[],
-            "name": "Turn-Down Service",
-            "description": "Evening refresh with chocolates and neatly folded blankets.",
-            "image": "images/turn-down-service.jpg"
-          }
-        ]
-      },
-      {
-        "category": "Linen & Laundry Services",
-        "services": [
-          {
-            "clients":[],
-            "name": "Fresh Towel & Bedding Replacement",
-            "description": "Get fresh towels and clean bedding upon request.",
-            "image": "images/towel-replacement.jpg"
-          },
-          {
-            "clients":[],
-            "name": "Guest Laundry",
-            "description": "Paid same-day cleaning services available.",
-            "image": "images/guest-laundry.jpg"
-          },
-          {
-            "clients":[],
-            "name": "Dry Cleaning & Pressing",
-            "description": "Fast and professional cleaning for business travelers.",
-            "image": "images/dry-cleaning.jpg"
-          }
-        ]
-      },
-      {
-        
-        "category": "Maintenance & Room Upkeep",
-        "services": [
-          {
-            "clients":[],
-            "name": "Mini-Bar Restocking",
-            "description": "Get your mini-bar restocked with drinks and snacks.",
-            "image": "images/mini-bar.jpg"
-          },
-          {
-            "clients":[],
-            "name": "Air Conditioning/Heating Adjustments",
-            "description": "Adjust room temperature as per your comfort.",
-            "image": "images/ac-adjustment.jpg"
-          },
-          {
-            "clients":[],
-            "name": "Lightbulb or TV Remote Replacement",
-            "description": "Request a new lightbulb or remote if needed.",
-            "image": "images/lightbulb-replacement.jpg"
-          },
-          {
-            "clients":[],
-            "name": "Plumbing & Electricity Fixes",
-            "description": "Report and fix plumbing or electricity issues.",
-            "image": "images/maintenance.jpg"
-          }
-        ]
-      },
-      {
-        
-        "category": "Personal Guest Services",
-        "services": [
-          {
-            "clients":[],
-            "name": "Shoe Shining",
-            "description": "Get your shoes polished and shined.",
-            "image": "images/shoe-shining.jpg"
-          },
-          {
-            "clients":[],
-            "name": "Iron & Ironing Board Delivery",
-            "description": "Request an iron and ironing board for your room.",
-            "image": "images/ironing-board.jpg"
-          },
-          {
-            "clients":[],
-            "name": "Extra Pillows & Blankets",
-            "description": "Request additional pillows and blankets for your comfort.",
-            "image": "images/extra-pillows.jpg"
-          },
-          {
-            "clients":[],
-            "name": "Crib or Rollaway Bed Setup",
-            "description": "Request a crib or extra bed for your stay.",
-            "image": "images/crib-setup.jpg"
-          }
-        ]
-      },
-      {
-        "category": "Special Requests",
-        "services": [
-          {
-            "clients":[],
-            "name": "Flower Arrangements",
-            "description": "Special flower arrangements for anniversaries and celebrations.",
-            "image": "images/flower-arrangements.jpg"
-          },
-          {
-            "clients":[],
-            "name": "Romantic Room Decor",
-            "description": "Honeymoon packages with romantic room decoration.",
-            "image": "images/romantic-decor.jpg"
-          },
-          {
-            "clients":[],
-            "name": "Pet Care Services",
-            "description": "Dog beds, bowls, and other pet care services available.",
-            "image": "images/pet-care.jpg"
-          }
-        ]
-      },
-      {
-        "category": "Health & Safety Services",
-        "services": [
-          {
-            "clients":[],
-            "name": "Disinfection Requests",
-            "description": "Post-COVID deep cleaning available upon request.",
-            "image": "images/disinfection.jpg"
-          },
-          {
-            "clients":[],
-            "name": "Allergy-Friendly Room Prep",
-            "description": "Hypoallergenic bedding and cleaning for allergy-sensitive guests.",
-            "image": "images/allergy-friendly.jpg"
-          },
-          {
-            "clients":[],
-            "name": "First Aid Kit Delivery",
-            "description": "Request a first aid kit for minor injuries.",
-            "image": "images/first-aid.jpg"
-          }
-        ]
-      },
-      {
-        "category": "Luxury/Resort-Specific Services",
-        "services": [
-          {
-            "clients":[],
-            "name": "Butler Service",
-            "description": "Assistance with packing, unpacking, and personal service.",
-            "image": "images/butler-service.jpg"
-          },
-          {
-            "clients":[],
-            "name": "In-Room Dining Setup",
-            "description": "Enjoy a private breakfast or meal in your room.",
-            "image": "images/in-room-dining.jpg"
-          },
-          {
-            "clients":[],
-            "name": "Personalized Fragrance Selection",
-            "description": "Choose a luxury fragrance for your room.",
-            "image": "images/fragrance-selection.jpg"
-          }
-        ]
-      }
-    ]
-  }
+  "services": [
+    {
+      "id": "1",
+      "category": "Cleaning & Housekeeping",
+      "services": [
+        {
+          "clients": [
+            {
+              "name": "Beatrice",
+              "houseNumber": "101"
+            }
+          ],
+          "name": "Room Cleaning",
+          "description": "We offer room cleaning services including making beds, vacuuming, and dusting.",
+          "image": "../images/room cleaning.jpeg"
+        },
+        {
+          "clients": [],
+          "name": "Bathroom Sanitization",
+          "description": "Fresh towels, toiletries restocking, and deep cleaning.",
+          "image": "../images/bathroom sanitization.jpeg"
+        },
+        {
+          "clients": [],
+          "name": "Trash Removal",
+          "description": "Daily trash removal to keep your room clean and fresh.",
+          "image": "../images/trash removal.jpeg"
+        },
+        {
+          "clients": [],
+          "name": "Turn-Down Service",
+          "description": "Evening refresh with chocolates and neatly folded blankets.",
+          "image": "../images/turn down service.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "category": "Laundry Services",
+      "services": [
+        {
+          "clients": [],
+          "name": "Towel & Bedding Replacement",
+          "description": "Get fresh towels and clean bedding upon request.",
+          "image": "../images/fresh towel and bedding replacement.jpeg"
+        },
+        {
+          "clients": [],
+          "name": "Guest Laundry",
+          "description": "Paid same-day cleaning services available.",
+          "image": "../images/guest laundry.jpeg"
+        },
+        {
+          "clients": [],
+          "name": "Dry Cleaning & Pressing",
+          "description": "Fast and professional cleaning for business travelers.",
+          "image": "../images/drycleaning and pressing.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "category": "Maintenance & Room Upkeep",
+      "services": [
+        {
+          "clients": [
+            {
+              "name": "peter",
+              "houseNumber": "102"
+            },
+            {
+              "name": "Brian Chillo",
+              "houseNumber": "222"
+            }
+          ],
+          "name": "Mini-Bar Restocking",
+          "description": "Get your mini-bar restocked with drinks and snacks.",
+          "image": "../images/minibar restocking.jpeg"
+        },
+        {
+          "clients": [],
+          "name": "Air Conditioning Adjustments",
+          "description": "Adjust room temperature as per your comfort.",
+          "image": "../images/airconditioning and heating adjustments.jpeg"
+        },
+        {
+          "clients": [
+            {
+              "name": "Chris Kimani",
+              "houseNumber": "234"
+            }
+          ],
+          "name": "Lightbulb or Remote Replacement",
+          "description": "Request a new lightbulb or remote if needed.",
+          "image": "../images/lightbulb or remote replacement.jpeg"
+        },
+        {
+          "clients": [
+            {
+              "name": "Beatrice",
+              "houseNumber": "101"
+            }
+          ],
+          "name": "Plumbing & Electricity Fixes",
+          "description": "Report and fix plumbing or electricity issues.",
+          "image": "../images/plumbing and elecricity fixes.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "category": "Personal Guest Services",
+      "services": [
+        {
+          "clients": [],
+          "name": "Shoe Shining",
+          "description": "Get your shoes polished and shined.",
+          "image": "../images/shoe shining.jpeg"
+        },
+        {
+          "clients": [],
+          "name": "Iron & Ironing Board Delivery",
+          "description": "Request an iron and ironing board for your room.",
+          "image": "../images/ironing and ironing board.jpeg"
+        },
+        {
+          "clients": [],
+          "name": "Extra Pillows & Blankets",
+          "description": "Request additional pillows and blankets for your comfort.",
+          "image": "../images/extrablankets and pillows.jpeg"
+        },
+        {
+          "clients": [],
+          "name": "Rollaway Bed Setup",
+          "description": "Request a crib or extra bed for your stay.",
+          "image": "../images/crib rollaway bed set up.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "category": "Special Requests",
+      "services": [
+        {
+          "clients": [],
+          "name": "Flower Arrangements",
+          "description": "Special flower arrangements for anniversaries and celebrations.",
+          "image": "../images/flower arrangement.jpeg"
+        },
+        {
+          "clients": [],
+          "name": "Romantic Room Decor",
+          "description": "Honeymoon packages with romantic room decoration.",
+          "image": "../images/romantic room decor.jpeg"
+        },
+        {
+          "clients": [],
+          "name": "Pet Care Services",
+          "description": "Dog beds, bowls, and other pet care services available.",
+          "image": "../images/pet care services.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "category": "Health & Safety Services",
+      "services": [
+        {
+          "clients": [],
+          "name": "Disinfection Requests",
+          "description": "Post-COVID deep cleaning available upon request.",
+          "image": "../images/disinfection requests.jpeg"
+        },
+        {
+          "clients": [],
+          "name": "Allergy-Friendly Room Prep",
+          "description": "Hypoallergenic bedding and cleaning for allergy-sensitive guests.",
+          "image": "../images/allergy friendly room set up.jpeg"
+        },
+        {
+          "clients": [],
+          "name": "First Aid Kit Delivery",
+          "description": "Request a first aid kit for minor injuries.",
+          "image": "../images/firstaid kit delivery.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "category": "Resort-Specific Services",
+      "services": [
+        {
+          "clients": [],
+          "name": "Butler Service",
+          "description": "Assistance with packing, unpacking, and personal service.",
+          "image": "../images/butler service.jpeg"
+        },
+        {
+          "clients": [],
+          "name": "In-Room Dining Setup",
+          "description": "Enjoy a private breakfast or meal in your room.",
+          "image": "../images/in room dining set up.jpeg"
+        },
+        {
+          "clients": [],
+          "name": "Personalized Fragrance Selection",
+          "description": "Choose a luxury fragrance for your room.",
+          "image": "../images/personalized fragrance selction.jpeg"
+        }
+      ]
+    }
+  ]
+}
