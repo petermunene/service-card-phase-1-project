@@ -1,0 +1,90 @@
+/* Keep spans in one row */
+h1{
+    text-align: center;
+    font-family: sans-serif;
+    position:relative;
+    
+}
+#services-bar {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping */
+    gap: 15px;
+    white-space: nowrap; /* Ensures spans stay in one line */
+}
+
+/* Style for each category span */
+.category-container {
+    display: inline-block;
+    position: relative; /* Needed for absolute positioning of table */
+    
+}
+
+/* Span styling */
+.category-span {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: lightgray;
+    cursor:pointer;
+    border-radius: 5px;
+}
+
+/* Add vertical separator between spans */
+.category-container:not(:last-child)::after {
+    content: "|";
+    color: gray;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Table Styling */
+.service-table {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background: white;
+    border: 2px solid black; /* Keep table borders */
+    border-collapse: collapse; /* Merge border lines */
+    z-index: 100; /* Ensure it appears above spans */
+    padding: 10px;
+    min-width: 250px;
+
+    /* Smooth transition effect */
+    opacity: 0;
+    transform: translate(10px,10px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    pointer-events: none; /* Prevents interaction when hidden */
+}
+
+/* Ensure table cells have visible borders */
+.service-table td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* Show the table smoothly on hover */
+.category-container:hover .service-table {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Remove bullets from the list */
+.service-table ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* List item styling */
+.service-table li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Add subtle separation between services */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Change background color and make the item bigger on hover */
+.service-table li:hover {
+    background-color: lightblue;
+    transform: scale(1.1); /* Makes the li slightly larger */
+    cursor: pointer;
+}
