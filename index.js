@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded",(e)=>{
 function displayBar() {
     const div = document.getElementById("services-bar");
 
-    fetch('http://localhost:3000/services')
+    fetch('https://my-app-backend-hvge.onrender.com/api/services')
         .then(res => res.json())
         .then(services => {
             services.forEach(category => {
@@ -101,7 +101,7 @@ function displayBar() {
                         service.clients.push(newClient)
                         
 
-                        fetch(`http://localhost:3000/services/${category.id}`, {
+                        fetch(`https://my-app-backend-hvge.onrender.com/api/${category.id}`, {
                             method: "PATCH",
                             headers: {
                                 "Content-Type": "application/json"
