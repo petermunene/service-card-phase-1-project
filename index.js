@@ -50,7 +50,7 @@ function displayBar() {
 
                 li.addEventListener("mouseover",function displayCard(){
                     const existingCard = document.querySelector("#service-card")
-                    
+                    existingCard.innerHTML=""
 
                 
                     // Create service card
