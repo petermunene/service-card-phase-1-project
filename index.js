@@ -6,7 +6,6 @@ function displayBar() {
 
     fetch('https://my-app-backend-hvge.onrender.com/api/services',{
         method:"GET",
-        mode: "no-cors"
     })
         .then(res => res.json())
         .then(services => {
@@ -106,7 +105,6 @@ function displayBar() {
 
                         fetch(`https://my-app-backend-hvge.onrender.com/api/services/${category.id}`, {
                             method: "PATCH",
-                            mode: "no-cors",
                             headers: {
                                 "Content-Type": "application/json"
                             },
