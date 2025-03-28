@@ -4,7 +4,10 @@ document.addEventListener("DOMContentLoaded",(e)=>{
 function displayBar() {
     const div = document.getElementById("services-bar");
 
-    fetch('https://my-app-backend-hvge.onrender.com/api/services')
+    fetch('https://my-app-backend-hvge.onrender.com/api/services',{
+        method:"GET",
+        mode: "no-cors"
+    })
         .then(res => res.json())
         .then(services => {
             services.forEach(category => {
@@ -103,6 +106,7 @@ function displayBar() {
 
                         fetch(`https://my-app-backend-hvge.onrender.com/api/services/${category.id}`, {
                             method: "PATCH",
+                            mode: "no-cors",
                             headers: {
                                 "Content-Type": "application/json"
                             },
