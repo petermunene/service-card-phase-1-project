@@ -101,7 +101,7 @@ function displayBar() {
                         service.clients.push(newClient)
                         
 
-                        fetch(`https://my-app-backend-hvge.onrender.com/api/${category.clients}`, {
+                        fetch(`https://my-app-backend-hvge.onrender.com/api/${category.id}`, {
                             method: "PATCH",
                             headers: {
                                 "Content-Type": "application/json"
