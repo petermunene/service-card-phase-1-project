@@ -25,7 +25,7 @@ h1{
 }
 #services-bar {
     display: flex;
-    flex-wrap: nowrap; /* Prevents wrapping */
+    flex-wrap: wrap; /* Prevents wrapping */
     gap: 15px;
  
 }
