@@ -32,7 +32,7 @@ h1{
 
 /* Style for each category span */
 .category-container {
-    display: inline-block;
+    display: block;
     position: relative; /* Needed for absolute positioning of table */
     
 }
