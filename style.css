@@ -27,7 +27,7 @@ h1{
     display: flex;
     flex-wrap: nowrap; /* Prevents wrapping */
     gap: 15px;
-    white-space: nowrap; /* Ensures spans stay in one line */
+ 
 }
 
 /* Style for each category span */
